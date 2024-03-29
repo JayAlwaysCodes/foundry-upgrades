@@ -10,7 +10,7 @@ import {UUPSUpgradeable} from "@openzeppelin/contracts-upgradeable/proxy/utils/U
 
 
 
-contract BoxV2 is  Initializable, UUPSUpgradeable, OwnableUpgradeable {
+contract BoxV2 is   UUPSUpgradeable {
     uint256 internal number;
 
 

@@ -15,11 +15,11 @@ contract BoxV1 is  Initializable, UUPSUpgradeable, OwnableUpgradeable {
 
     ///@custom:oz-upgrades-unsafe-allow constructor
     constructor() {
-        _disableInotializers();
+        _disableInitializers();
     }
 
     function initialize() public initializer{
-        __Ownable_init();
+        __Ownable_init(address(msg.sender));
         __UUPSUpgradeable_init();
     }
 
